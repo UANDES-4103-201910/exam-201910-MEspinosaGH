@@ -17,7 +17,7 @@ address = Address.create([{ user: User.find(1), phone: 912121212, address_line_1
 						  { user: User.find(1), phone: 913131313, address_line_1: 'Vitacura 2902, Las Condes',
 						  	address_line_2: 'depto 206', city: 'Santiago', country: 'Chile', zipcode:'11111' }])
 
-product = Product.create([{ brand: 'Iphone', model: 'X', variant: 'black 256GB', price: 700000, product_type: 'subscription plan',
+product = Product.create([{ brand: 'Iphone', model: 'X', variant: 'black 256GB', price: 700000, product_type: 'subscription',
 							short_description: 'overpriced product', long_description: 'you need to sell at least one organ to buy it' },
 						  { brand: 'Xiaomi', model: 'Redmi 5A', variant: 'gold 16GB', price: 80000, product_type: 'handset',
 						    short_description: 'cheap product', long_description: 'It is a miracle if it last longer than a year. Cheaper than a Mac holder.' }])

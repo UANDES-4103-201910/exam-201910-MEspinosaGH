@@ -1,0 +1,48 @@
+
+<nav class="navbar nav navbar-dark bg-dark fixed-top navbar-expand-lg">
+  <a class="navbar-brand" href="/">Z-mart</a>
+
+  <!--div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link log" href="/users/sign_in">Log in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link log" href="/register">Sign up</a>
+      </li>
+    </ul>
+  </div-->
+</nav>
+<br><br><br>
+<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+  <li class="nav-item">
+    <%= link_to handsets_path, class: "nav-link", remote: true do %>Handsets<% end %>
+  </li>
+  <li class="nav-item">
+    <%= link_to prepay_path, class: "nav-link", remote: true do %>Prepay Options<% end %>
+  </li>
+  <li class="nav-item">
+    <%= link_to subscriptions_path, class: "nav-link", remote: true do %>Subscription<% end %>
+  </li>
+</ul>
+
+<div id="home_content" class="d-flex flex-row">
+    <ul class="nav flex-column p-2">
+      <% @brands.each do |brand| %>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><%= brand %></a>
+      </li>
+      <% end %>
+    </ul>
+</div>
+
+
+<footer class="page-footer font-small fixed-bottom">
+  <div class="text-center py-3">
+    <i class="fas fa-phone"></i> 22233344 |
+    <i class="fas fa-at"></i> mespinosa3@miuandes.cl |
+    <i class="fas fa-map-marked-alt"></i> Monseñor Álvaro del Portillo 12455
+  </div>
+
+</footer> 
